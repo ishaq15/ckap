@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marketplace — CKAP</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">CKAP</a>
+    <nav class="nav">
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      <ul class="nav-list">
+        <li><a href="archive.html">Archive</a></li>
+        <li class="active"><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="learning.html">Learning hub</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Support communities, buy cultural products</h1>
+      <p>Proceeds help sustain documentation efforts and return value to contributors.</p>
+    </section>
+
+    <section id="product-grid" class="grid-3">
+      <div class="card product" data-id="B001">
+        <h3>Digitized book: Abuja oral histories</h3>
+        <p>PDF compilation of curated stories and annotations.</p>
+        <div class="price">₦3,500</div>
+        <button class="btn btn-primary" onclick="addToCart('B001')">Buy</button>
+      </div>
+      <div class="card product" data-id="G101">
+        <h3>Guide: Community archiving toolkit</h3>
+        <p>Step-by-step methods for local documentation teams.</p>
+        <div class="price">₦5,000</div>
+        <button class="btn btn-primary" onclick="addToCart('G101')">Buy</button>
+      </div>
+      <div class="card product" data-id="C210">
+        <h3>Craft: Woven heritage bookmark</h3>
+        <p>Handmade, inspired by regional weaving patterns.</p>
+        <div class="price">₦2,000</div>
+        <button class="btn btn-primary" onclick="addToCart('C210')">Buy</button>
+      </div>
+      <div class="card product" data-id="S300">
+        <h3>Service: Research indexing (per project)</h3>
+        <p>Get professional LIS indexing for reports and theses.</p>
+        <div class="price">₦25,000</div>
+        <button class="btn btn-primary" onclick="addToCart('S300')">Buy</button>
+      </div>
+      <div class="card product" data-id="W115">
+        <h3>Workshop: Digital literacy (online)</h3>
+        <p>2-hour session, certificate included.</p>
+        <div class="price">₦8,000</div>
+        <button class="btn btn-primary" onclick="addToCart('W115')">Buy</button>
+      </div>
+      <div class="card product" data-id="B002">
+        <h3>Digitized book: Herbal knowledge compendium</h3>
+        <p>Community-sourced remedies and contextual notes.</p>
+        <div class="price">₦4,500</div>
+        <button class="btn btn-primary" onclick="addToCart('B002')">Buy</button>
+      </div>
+    </section>
+
+    <section class="cart-panel">
+      <h2>Your cart</h2>
+      <div id="cart-items" class="cart-items empty">Cart is empty.</div>
+      <div class="cart-actions">
+        <button class="btn btn-accent" onclick="clearCart()">Clear</button>
+        <button class="btn btn-primary" onclick="checkout()">Checkout</button>
+      </div>
+      <p class="note">Demo checkout: shows a summary modal.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">© <span id="year"></span> CKAP. All rights reserved.</div>
+  </footer>
+   <script defer src="script.js"></script>
+</body>
+</html>

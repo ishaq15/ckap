@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Learning hub — CKAP</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">CKAP</a>
+    <nav class="nav">
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      <ul class="nav-list">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li class="active"><a href="learning.html">Learning hub</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Grow your knowledge, build your skills</h1>
+      <p>Courses designed to strengthen information literacy, research methods, and cultural documentation.</p>
+    </section>
+
+    <section class="grid-3">
+      <div class="card">
+        <h3>Information literacy essentials</h3>
+        <p>Evaluate sources, avoid misinformation, and cite properly.</p>
+        <button class="btn btn-primary" onclick="enroll('Information literacy essentials')">Enroll</button>
+      </div>
+      <div class="card">
+        <h3>Digital cataloging & metadata</h3>
+        <p>Hands-on cataloging using Dublin Core and controlled vocabularies.</p>
+        <button class="btn btn-primary" onclick="enroll('Digital cataloging & metadata')">Enroll</button>
+      </div>
+      <div class="card">
+        <h3>Community archiving methods</h3>
+        <p>Plan fieldwork, record oral histories, and handle ethics.</p>
+        <button class="btn btn-primary" onclick="enroll('Community archiving methods')">Enroll</button>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="card">
+        <blockquote>
+          “The cataloging course helped us organize school archives and improved student projects.”
+        </blockquote>
+        <p class="meta">— LIS Student, Abuja</p>
+      </div>
+      <div class="card">
+        <blockquote>
+          “Our community’s stories are now accessible online, and we’re earning from downloads.”
+        </blockquote>
+        <p class="meta">— Community Contributor, Kogi</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">© <span id="year"></span> CKAP. All rights reserved.</div>
+  </footer>
+   <script defer src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Membership — CKAP</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">CKAP</a>
+    <nav class="nav">
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      <ul class="nav-list">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="learning.html">Learning hub</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li class="active"><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Choose your access plan</h1>
+      <p>Flexible options for individuals and institutions. Premium downloads require a paid plan.</p>
+    </section>
+
+    <section class="grid-4 pricing">
+      <div class="card">
+        <h3>Free</h3>
+        <p>Browse basic archives and community stories.</p>
+        <ul class="bullets">
+          <li><strong>Access:</strong> Basic content</li>
+          <li><strong>Downloads:</strong> None</li>
+        </ul>
+        <button class="btn btn-accent" onclick="subscribePlan('Free')">Subscribe</button>
+      </div>
+
+      <div class="card best">
+        <h3>Student</h3>
+        <p>Affordable access to premium resources.</p>
+        <ul class="bullets">
+          <li><strong>Access:</strong> Premium archive</li>
+          <li><strong>Downloads:</strong> Limited</li>
+        </ul>
+        <button class="btn btn-primary" onclick="subscribePlan('Student')">Subscribe</button>
+      </div>
+
+      <div class="card">
+        <h3>Researcher</h3>
+        <p>Full access and downloads for professional use.</p>
+        <ul class="bullets">
+          <li><strong>Access:</strong> All content</li>
+          <li><strong>Downloads:</strong> Unlimited</li>
+        </ul>
+        <button class="btn btn-primary" onclick="subscribePlan('Researcher')">Subscribe</button>
+      </div>
+
+      <div class="card">
+        <h3>Institutional</h3>
+        <p>Bulk accounts, training packages, and partner support.</p>
+        <ul class="bullets">
+          <li><strong>Access:</strong> Organization-wide</li>
+          <li><strong>Support:</strong> Dedicated</li>
+        </ul>
+        <button class="btn btn-primary" onclick="subscribePlan('Institutional')">Subscribe</button>
+      </div>
+    </section>
+
+    <section class="note-box">
+      <p><strong>Note:</strong> This demo uses local storage to simulate membership status.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">© <span id="year"></span> CKAP. All rights reserved.</div>
+  </footer>
+    <script defer src="script.js"></script>
+</body>
+</html>

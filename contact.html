@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — CKAP</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">CKAP</a>
+    <nav class="nav">
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      <ul class="nav-list">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="learning.html">Learning hub</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Let’s work together</h1>
+      <p>Questions, ideas, or partnership proposals? Reach out to us.</p>
+    </section>
+
+    <section class="split">
+      <div class="card">
+        <h3>Send a message</h3>
+        <form id="contact-form" onsubmit="sendMessage(event)">
+          <label>Name<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p class="note">Demo only: shows a success dialog.</p>
+        </form>
+      </div>
+
+      <div>
+        <h3>Contact information</h3>
+        <p><strong>Email:</strong> info@ckap.org</p>
+        <p><strong>Phone:</strong> +234-8137938845</p>
+        <p><strong>Address:</strong> Abuja, Federal Capital Territory, Nigeria</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">© <span id="year"></span> CKAP. All rights reserved.</div>
+  </footer>
+    <script defer src="script.js"></script>
+</body>
+</html>

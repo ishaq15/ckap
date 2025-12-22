@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archive — CKAP</title>
+  <link rel="stylesheet" href="style.css" />
+ 
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">CKAP</a>
+    <nav class="nav">
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      <ul class="nav-list">
+        <li class="active"><a href="archive.html">Archive</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="learning.html">Learning hub</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Discover authentic indigenous knowledge</h1>
+      <p>Search stories, practices, and community-based research documented and cataloged by LIS students and professionals.</p>
+    </section>
+
+    <section class="archive-controls">
+      <input id="search" type="text" class="input" placeholder="Search the archive (e.g. folklore, Abuja, agriculture)" oninput="filterArchive()" />
+      <div class="filter-row">
+        <button class="chip" data-filter="stories" onclick="setCategory(this)">Stories</button>
+        <button class="chip" data-filter="research" onclick="setCategory(this)">Research papers</button>
+        <button class="chip" data-filter="audio" onclick="setCategory(this)">Audio/Video</button>
+        <button class="chip" data-filter="all" onclick="setCategory(this)">All</button>
+      </div>
+    </section>
+
+    <section id="archive-grid" class="grid-3">
+      <article class="card archive-item" data-tags="stories folklore culture abuja" data-cat="stories">
+        <h3>Gbagyi oral stories</h3>
+        <p>Traditional tales from Abuja’s Gbagyi communities, documenting moral teachings and seasonal cycles.</p>
+        <div class="meta"><span>Region: FCT</span><span>Language: Gbagyi</span></div>
+        <a class="text-link" href="#" onclick="openItem(event)">Read more</a>
+      </article>
+
+      <article class="card archive-item" data-tags="research agriculture water management nasarawa" data-cat="research">
+        <h3>Community water management practices</h3>
+        <p>Local strategies for dry-season water conservation and small-scale irrigation documented across bordering communities.</p>
+        <div class="meta"><span>Region: Nasarawa</span><span>Type: Field study</span></div>
+        <a class="text-link premium" href="#" onclick="requireMembership(event)">Download (premium)</a>
+      </article>
+
+      <article class="card archive-item" data-tags="audio interview elders weaving kogi" data-cat="audio">
+        <h3>Audio interview: Kogi weaving techniques</h3>
+        <p>Recorded discussion with master weavers on materials sourcing and cultural symbolism.</p>
+        <div class="meta"><span>Region: Kogi</span><span>Format: Audio</span></div>
+        <a class="text-link" href="#" onclick="openItem(event)">Listen now</a>
+      </article>
+
+      <article class="card archive-item" data-tags="research herbal knowledge health kaduna" data-cat="research">
+        <h3>Herbal knowledge and community health</h3>
+        <p>Annotated compendium of traditional remedies and their modern interpretations.</p>
+        <div class="meta"><span>Region: Kaduna</span><span>Type: Literature review</span></div>
+        <a class="text-link premium" href="#" onclick="requireMembership(event)">Download (premium)</a>
+      </article>
+
+      <article class="card archive-item" data-tags="stories migration history benue tiv" data-cat="stories">
+        <h3>Tiv migration narratives</h3>
+        <p>Oral histories detailing migration patterns, clan structures, and land use traditions.</p>
+        <div class="meta"><span>Region: Benue</span><span>Language: Tiv</span></div>
+        <a class="text-link" href="#" onclick="openItem(event)">Read more</a>
+      </article>
+
+      <article class="card archive-item" data-tags="audio video festival dance cross river efik" data-cat="audio">
+        <h3>Festival dance documentation (video)</h3>
+        <p>Short film capturing choreography and meaning of Efik festival dances.</p>
+        <div class="meta"><span>Region: Cross River</span><span>Format: Video</span></div>
+        <a class="text-link" href="#" onclick="openItem(event)">Watch</a>
+      </article>
+    </section>
+
+    <section class="note-box">
+      <p><strong>Note:</strong> Premium downloads are available to Student, Researcher, and Institutional members.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">© <span id="year"></span> CKAP. All rights reserved.</div>
+  </footer>
+   <script defer src="script.js"></script>
+</body>
+</html>

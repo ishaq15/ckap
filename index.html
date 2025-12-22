@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CKAP — Community Knowledge Archive Platform</title>
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">CKAP</a>
+    <nav class="nav" id="nav">
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+      <ul class="nav-list">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="learning.html">Learning hub</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content container">
+        <h1>Preserving indigenous knowledge, empowering communities</h1>
+        <p>CKAP is a digital hub where local traditions, oral histories, and community research are preserved, shared, and monetized for education and development.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="archive.html">Explore archive</a>
+          <a class="btn btn-accent" href="membership.html">Join membership</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container grid-3 features">
+      <div class="card">
+        <h3>Digital repository</h3>
+        <p>Discover oral stories, cultural practices, and local research papers with rich metadata and smart search.</p>
+        <a class="text-link" href="archive.html">Browse the archive →</a>
+      </div>
+      <div class="card">
+        <h3>Community marketplace</h3>
+        <p>Support communities by purchasing digitized books, guides, and heritage-inspired products.</p>
+        <a class="text-link" href="marketplace.html">Visit the marketplace →</a>
+      </div>
+      <div class="card">
+        <h3>Learning hub</h3>
+        <p>Build skills in information literacy, cataloging, and digital archiving through accessible courses.</p>
+        <a class="text-link" href="learning.html">See courses →</a>
+      </div>
+    </section>
+
+    <section class="container about">
+      <div class="split">
+        <div>
+          <h2>Our mission</h2>
+          <p>We bridge the gap between knowledge and opportunity by making indigenous wisdom accessible to students, researchers, and organizations, while enabling communities to earn from their intellectual heritage.</p>
+        </div>
+        <div class="highlight-box">
+          <h3>Impact at a glance</h3>
+          <ul class="checklist">
+            <li><strong>Preservation:</strong> Digitize oral histories and local research.</li>
+            <li><strong>Access:</strong> Searchable archives for students and scholars.</li>
+            <li><strong>Income:</strong> Marketplace commissions return value to communities.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container banner">
+      <div class="banner-inner">
+        <h2>Ready to explore authentic local knowledge?</h2>
+        <a class="btn btn-primary" href="archive.html">Start browsing</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>CKAP</h4>
+        <p>Community Knowledge Archive Platform — Abuja, Nigeria.</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul class="footer-links">
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="community.html">Contribute</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay informed</h4>
+        <form class="inline-form" onsubmit="subscribe(event)">
+          <input type="email" placeholder="Your email" required />
+          <button class="btn btn-accent" type="submit">Subscribe</button>
+        </form>
+        <p class="note">We respect your privacy.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> CKAP. All rights reserved.</div>
+  
+  </footer>
+  <script defer src="script.js"></script>
+</body>
+</html>

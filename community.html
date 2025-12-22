@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community — CKAP</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">CKAP</a>
+    <nav class="nav">
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+      <ul class="nav-list">
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="learning.html">Learning hub</a></li>
+        <li class="active"><a href="community.html">Community</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Your knowledge matters</h1>
+      <p>Contribute stories, research, or recordings. Earn recognition and income when your materials are accessed or purchased.</p>
+    </section>
+
+    <section class="split">
+      <div>
+        <h3>Become a contributor</h3>
+        <p>We welcome elders, storytellers, researchers, and LIS students. Submissions are reviewed for quality and ethical handling.</p>
+        <ul class="checklist">
+          <li><strong>Respect:</strong> Proper attribution and permissions.</li>
+          <li><strong>Quality:</strong> Clear audio/video and accurate metadata.</li>
+          <li><strong>Benefits:</strong> Revenue share on premium downloads.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Submit your story</h3>
+        <form id="submit-form" onsubmit="submitContribution(event)">
+          <label>Full name<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label>Region<input type="text" name="region" placeholder="e.g., FCT, Kogi" required /></label>
+          <label>Type
+            <select name="type" required>
+              <option>Story</option>
+              <option>Research paper</option>
+              <option>Audio/Video</option>
+            </select>
+          </label>
+          <label>Summary<textarea name="summary" rows="4" required></textarea></label>
+          <label>Link to file<input type="url" name="link" placeholder="Optional (Google Drive, etc.)" /></label>
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <p class="note">Demo only: this form shows a confirmation message.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">© <span id="year"></span> CKAP. All rights reserved.</div>
+  </footer>
+    <script defer src="script.js"></script>
+</body>
+</html>
