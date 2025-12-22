@@ -103,7 +103,7 @@ img{max-width:100%;height:auto;border-radius:var(--radius-8)}
 }
 .hero-content{padding:4.5rem 0;text-align:center}
 .hero h1{
-  font-size:var(--size-3xl);margin:.25rem 0 .5rem;
+  font-size:var(--size-3xl);margin:.21rem 0 .5rem;
   line-height:1.2;font-weight:800;letter-spacing:.2px
 }
 .hero p{max-width:760px;margin:0 auto var(--gap-16);font-size:var(--size-lg);opacity:.95}
