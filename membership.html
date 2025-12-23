@@ -8,6 +8,7 @@
  
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
     <a class="logo" href="index.html">CKAP</a>
     <nav class="nav">
@@ -19,66 +20,64 @@
         <li><a href="community.html">Community</a></li>
         <li class="active"><a href="membership.html">Membership</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Main -->
   <main class="container">
+    <!-- Page header -->
     <section class="page-header">
-      <h1>Choose your access plan</h1>
-      <p>Flexible options for individuals and institutions. Premium downloads require a paid plan.</p>
+      <h1>Choose Your Access Plan</h1>
+      <p>Select a membership plan to unlock premium features. Registration and payment are required.</p>
     </section>
 
+    <!-- Pricing grid -->
     <section class="grid-4 pricing">
       <div class="card">
         <h3>Free</h3>
         <p>Browse basic archives and community stories.</p>
-        <ul class="bullets">
-          <li><strong>Access:</strong> Basic content</li>
-          <li><strong>Downloads:</strong> None</li>
-        </ul>
-        <button class="btn btn-accent" onclick="subscribePlan('Free')">Subscribe</button>
+        <div class="price">₦0</div>
+        <button class="btn btn-accent" onclick="location.href='register.html'">Register</button>
       </div>
 
       <div class="card best">
         <h3>Student</h3>
         <p>Affordable access to premium resources.</p>
-        <ul class="bullets">
-          <li><strong>Access:</strong> Premium archive</li>
-          <li><strong>Downloads:</strong> Limited</li>
-        </ul>
-        <button class="btn btn-primary" onclick="subscribePlan('Student')">Subscribe</button>
+        <div class="price">₦2,000 / month</div>
+        <button class="btn btn-primary" onclick="location.href='register.html'">Register</button>
+        <a class="text-link" href="#">Proceed to Payment</a>
       </div>
 
       <div class="card">
         <h3>Researcher</h3>
         <p>Full access and downloads for professional use.</p>
-        <ul class="bullets">
-          <li><strong>Access:</strong> All content</li>
-          <li><strong>Downloads:</strong> Unlimited</li>
-        </ul>
-        <button class="btn btn-primary" onclick="subscribePlan('Researcher')">Subscribe</button>
+        <div class="price">₦20,000 / month</div>
+        <button class="btn btn-primary" onclick="location.href='register.html'">Register</button>
+        <a class="text-link" href="#">Proceed to Payment</a>
       </div>
 
       <div class="card">
         <h3>Institutional</h3>
         <p>Bulk accounts, training packages, and partner support.</p>
-        <ul class="bullets">
-          <li><strong>Access:</strong> Organization-wide</li>
-          <li><strong>Support:</strong> Dedicated</li>
-        </ul>
-        <button class="btn btn-primary" onclick="subscribePlan('Institutional')">Subscribe</button>
+        <div class="price">₦50,000 / month</div>
+        <button class="btn btn-primary" onclick="location.href='register.html'">Register</button>
+        <a class="text-link" href="#">Proceed to Payment</a>
       </div>
     </section>
 
+    <!-- Note -->
     <section class="note-box">
-      <p><strong>Note:</strong> This demo uses local storage to simulate membership status.</p>
+      <p><strong>Note:</strong> All paid plans require registration before payment.</p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-bottom">© <span id="year"></span> CKAP. All rights reserved.</div>
   </footer>
-    <script defer src="script.js"></script>
+   <script defer src="script.js"></script>
 </body>
 </html>

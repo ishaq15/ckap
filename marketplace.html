@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Marketplace — CKAP</title>
   <link rel="stylesheet" href="style.css" />
- 
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
     <a class="logo" href="index.html">CKAP</a>
     <nav class="nav">
@@ -19,69 +20,75 @@
         <li><a href="community.html">Community</a></li>
         <li><a href="membership.html">Membership</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Main -->
   <main class="container">
+    <!-- Page header -->
     <section class="page-header">
       <h1>Support communities, buy cultural products</h1>
       <p>Proceeds help sustain documentation efforts and return value to contributors.</p>
     </section>
 
+    <!-- Product grid -->
     <section id="product-grid" class="grid-3">
-      <div class="card product" data-id="B001">
+      <div class="card product">
         <h3>Digitized book: Abuja oral histories</h3>
         <p>PDF compilation of curated stories and annotations.</p>
         <div class="price">₦3,500</div>
-        <button class="btn btn-primary" onclick="addToCart('B001')">Buy</button>
+        <button class="btn btn-primary" onclick="location.href='register.html'">Register to Buy</button>
+        <a class="text-link" href="#">Proceed to Payment</a>
       </div>
-      <div class="card product" data-id="G101">
+
+      <div class="card product">
         <h3>Guide: Community archiving toolkit</h3>
         <p>Step-by-step methods for local documentation teams.</p>
         <div class="price">₦5,000</div>
-        <button class="btn btn-primary" onclick="addToCart('G101')">Buy</button>
+        <button class="btn btn-primary" onclick="location.href='register.html'">Register to Buy</button>
+        <a class="text-link" href="#">Proceed to Payment</a>
       </div>
-      <div class="card product" data-id="C210">
+
+      <div class="card product">
         <h3>Craft: Woven heritage bookmark</h3>
         <p>Handmade, inspired by regional weaving patterns.</p>
         <div class="price">₦2,000</div>
-        <button class="btn btn-primary" onclick="addToCart('C210')">Buy</button>
+        <button class="btn btn-primary" onclick="location.href='register.html'">Register to Buy</button>
+        <a class="text-link" href="#">Proceed to Payment</a>
       </div>
-      <div class="card product" data-id="S300">
+
+      <div class="card product">
         <h3>Service: Research indexing (per project)</h3>
         <p>Get professional LIS indexing for reports and theses.</p>
         <div class="price">₦25,000</div>
-        <button class="btn btn-primary" onclick="addToCart('S300')">Buy</button>
+        <button class="btn btn-primary" onclick="location.href='register.html'">Register to Buy</button>
+        <a class="text-link" href="#">Proceed to Payment</a>
       </div>
-      <div class="card product" data-id="W115">
+
+      <div class="card product">
         <h3>Workshop: Digital literacy (online)</h3>
         <p>2-hour session, certificate included.</p>
         <div class="price">₦8,000</div>
-        <button class="btn btn-primary" onclick="addToCart('W115')">Buy</button>
+        <button class="btn btn-primary" onclick="location.href='register.html'">Register to Buy</button>
+        <a class="text-link" href="#">Proceed to Payment</a>
       </div>
-      <div class="card product" data-id="B002">
+
+      <div class="card product">
         <h3>Digitized book: Herbal knowledge compendium</h3>
         <p>Community-sourced remedies and contextual notes.</p>
         <div class="price">₦4,500</div>
-        <button class="btn btn-primary" onclick="addToCart('B002')">Buy</button>
+        <button class="btn btn-primary" onclick="location.href='register.html'">Register to Buy</button>
+        <a class="text-link" href="#">Proceed to Payment</a>
       </div>
-    </section>
-
-    <section class="cart-panel">
-      <h2>Your cart</h2>
-      <div id="cart-items" class="cart-items empty">Cart is empty.</div>
-      <div class="cart-actions">
-        <button class="btn btn-accent" onclick="clearCart()">Clear</button>
-        <button class="btn btn-primary" onclick="checkout()">Checkout</button>
-      </div>
-      <p class="note">Demo checkout: shows a summary modal.</p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-bottom">© <span id="year"></span> CKAP. All rights reserved.</div>
   </footer>
-   <script defer src="script.js"></script>
 </body>
 </html>
